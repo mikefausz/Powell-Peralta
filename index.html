@@ -3,7 +3,10 @@
   <head>
     <meta charset="utf-8">
     <title>Sk8r Site</title>
+    <link rel="stylesheet" href="../../normalize.css">
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" media="(max-width: 1024px)" href="styles-mobile.css" />
+    <!-- <link rel="stylesheet" media="(max-width: 900px)" href="styles-mobile.css" /> -->
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,800' rel='stylesheet' type='text/css'>
   </head>
   <body>
@@ -33,10 +36,30 @@
               <li><a href ="#"><img src="./images/yt-icon.png" alt="YouTube Icon"/></></li>
             </ul>
           </nav>
-          <nav class="buttonbar">
-            <a href="#articles"><div class="button">
+          <div class="buttonbar">
+            <!-- <li><a href="#articles"><div class="button">
               <div id="dash"></div>
               <p>SK8T NEWS</p>
+              <div id="dash"></div>
+            </div></a></li>
+            <li><a href="#sk8ers"><div class="button">
+              <div id="dash"></div>
+              <p>SKATEBOARDERS</p>
+              <div id="dash"></div>
+            </div></a></li>
+            <li><a href="#boards"><div class="button">
+              <div id="dash"></div>
+              <p>BOARD DESIGNS</p>
+              <div id="dash"></div>
+            </div></a></li>
+            <li><a href="#contact"><div class="button">
+              <div id="dash"></div>
+              <p>CONTACT US</p>
+              <div id="dash"></div>
+            </div></a></li> -->
+            <a href="#articles"><div class="button">
+              <div id="dash"></div>
+              <p>Sk8t News</p>
               <div id="dash"></div>
             </div></a>
             <a href="#sk8ers"><div class="button">
@@ -48,22 +71,25 @@
               <div class="button">
                 <div id="dash"></div>
                 <p>Board Designs</p>
-                <div id="dash"></div></div>
-            </a>
-            <a href="#contact"><div class="button">
+                <div id="dash"></div>
+            </div></a>
+            <a href="#contact"><div class="button" id="last">
               <div id="dash"></div>
               <p>Contact Us</p>
               <div id="dash"></div>
             </div></a>
-          </nav>
+          </ul>
         </header>
         <section class="top-photo">
+          <div class="slideshow">
+            <div class="grid"></div>
+          </div>
           <img src="./images/peralta-logo.png" alt="Peralta Logo" />
         </section>
         <section class="circlebar">
-          <div class="circle"></div>
-          <div class="circle"></div>
-          <div class="circle"></div>
+          <a href="#"><div class="circle" id="circle1"></div></a>
+          <a href="#"><div class="circle" id="circle2"></div></a>
+          <a href="#"><div class="circle" id="circle3"></div></a>
         </section>
         <a name="articles"></a><section class="articles">
           <div class="col-3">
@@ -104,7 +130,6 @@
                  <div class="sk8er-photo" id="mountain">
                   <h4>Lance Mountain</h4></div>
                </div>
-
                 <div class="inner-col">
                   <div class="sk8er-photo" id="mullen">
                   <h4>Rodney Mullen</h4></div>
@@ -115,16 +140,6 @@
                 <h4>Steve Caballero</h4></div>
              </div>
           </div>
-          <!-- <div class="col-1">
-             <div class="sk8er-arrow">SKATEBOARDERS</div>
-             <div class="sk8er-photo" id="mountain">
-              <h4>Lance Mountain</h4></div>
-             <div class="sk8er-photo" id="mullen">
-              <h4>Rodney Mullen</h4></div>
-             <div class="sk8er-photo" id="cab">
-              <h4>Steve Caballero</h4></div>
-
-          </div> -->
           <div class="col-2">
             <div class="sk8er-photo" id="guerrero">
               <h4>Tommy Guerrero</h4>
@@ -133,18 +148,38 @@
       </section>
       <a name="boards">
       <section class="boards">
-        <div class="board-list">
-          <img src="./images/sk8-3.png" alt="enjoi Board" />
-          <img src="./images/sk8-4.png" alt="Monkey Board" />
-          <img src="./images/sk8-5.png" alt="Message Board" />
-          <img src="./images/sk8-6.png" alt="Good Mood Board" />
-          <img src="./images/sk8-7.png" alt="Hungover Board" />
-          <img src="./images/sk8-8.png" alt="Shecks Board" />
-          <img src="./images/sk8-9.png" alt="Jesus Board" />
-          <img src="./images/sk8-10.png" alt="Alien Board" />
-          <img src="./images/sk8-2.png" alt="Elephant Board" />
-          <img src="./images/sk8-1.png" alt="Skull Board" />
-        </div>
+        <ul class="board-list">
+          <li class="board-box">
+            <img src="./images/sk8-3.png" alt="enjoi Board" />
+          </li>
+          <li class="board-box">
+            <img src="./images/sk8-4.png" alt="Monkey Board" />
+          </li>
+          <li class="board-box">
+            <img src="./images/sk8-5.png" alt="Message Board" />
+          </li>
+          <li class="board-box">
+            <img src="./images/sk8-6.png" alt="Good Mood Board" />
+          </li>
+          <li class="board-box">
+            <img src="./images/sk8-7.png" alt="Hungover Board" />
+          </li>
+          <li class="board-box">
+            <img src="./images/sk8-8.png" alt="Shecks Board" />
+          </li>
+          <li class="board-box">
+            <img src="./images/sk8-9.png" alt="Jesus Board" />
+          </li>
+          <li class="board-box">
+            <img src="./images/sk8-10.png" alt="Alien Board" />
+          </li>
+          <li class="board-box">
+            <img src="./images/sk8-2.png" alt="Elephant Board" />
+          </li>
+          <li class="board-box">
+            <img src="./images/sk8-1.png" alt="Skull Board" />
+          </li>
+        </ul>
       </section>
       <a name="contact"></a>
       <section class="contact">
@@ -153,11 +188,11 @@
             <p>
               Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit
             </p>
-            <ul class="social">
-              <li><a href="#"><img src="./images/fb-icon-bk.png" alt="Facebook Icon" /></a></li>
-              <li><a href="#"><img src="./images/rss-icon-bk.png" alt="RSS Icon" /></a></li>
-              <li><a href="#"><img src="./images/twitter-icon-bk.png" alt="Twitter Icon" /></a></li>
-              <li><a href="#"><img src="./images/yt-icon-bk.png" alt="YouTube Icon" /></a></li>
+            <ul class="social" id="con-social">
+              <li><a href="#"><img src="./images/fb-icon.png" alt="Facebook Icon" /></a></li>
+              <li><a href="#"><img src="./images/rss-icon.png" alt="RSS Icon" /></a></li>
+              <li><a href="#"><img src="./images/twitter-icon.png" alt="Twitter Icon" /></a></li>
+              <li><a href="#"><img src="./images/yt-icon.png" alt="YouTube Icon" /></a></li>
             </ul>
         </div>
         <div class="con-form">
@@ -167,7 +202,6 @@
           <a href="#"><div id="submit">SUBMIT</div></a>
         </div>
       </section>
-
       </div>
     </div>
   </body>
