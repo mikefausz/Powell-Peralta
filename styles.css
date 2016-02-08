@@ -418,7 +418,7 @@ a {
   top: 15%;
   display: inline-block;
   background: rgba(180,41,46,1);
-  box-shadow: 0 1px 0 0 rgba(177,177,177,.5);
+  box-shadow: 0 2px 0 0 rgba(177,177,177,.5);
   padding: 18px 0;
   width: 150px;
   text-align: center;
@@ -438,7 +438,20 @@ a {
   border-bottom: 29px solid transparent;
   border-left: 20px solid rgba(180,41,46,1);
 }
-
+.sk8er-arrow:before {
+  content: '';
+  display: block;
+  position: absolute;
+  z-index: 0;
+  left: 100%;
+  top: 2px;
+  width: 0;
+  height: 0;
+  border-top: 29px solid transparent;
+  border-right: 0 solid transparent;
+  border-bottom: 29px solid transparent;
+  border-left: 20px solid rgba(177,177,177,.5);
+}
 .sk8er-arrow:hover {
   transform: scale(1.1);
 }
@@ -598,7 +611,10 @@ textarea {
   margin-bottom: 2%;
   font-size: 12px;
   padding: 11px;
-  border: 2px solid darkgrey;
+  border-top: 2px;
+  border-left: 2px;
+  border-style: solid;
+  border-color: darkgrey;
   line-height: 100%;
 }
 
