@@ -1,0 +1,36 @@
+.boards {
+  background-color: #fff;
+  height: 185px;
+  margin-top: 3%;
+  img {
+    width: 100%;
+    height: 100%;
+    transition: all .1s ease-in-out;
+  }
+  img:last-of-type {
+    float: right;
+  }
+  img:hover {
+    transform: scale(1.1);
+  }
+}
+
+.board-list {
+  padding: 0 2%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.board-row {
+  margin: auto;
+  display: inline-block;
+  width: 48%;
+  display: flex;
+  justify-content: space-between;
+}
+.board-box {
+  margin: auto;
+  display: inline-block;
+  width: 14%;
+}

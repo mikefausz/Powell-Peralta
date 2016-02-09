@@ -1,0 +1,135 @@
+.top-photo {
+/*background-image: url(./images/top-slide.png),url();
+  background-size: 300%;
+  background-position-x: 0px;
+  background-position-y: -18px;
+  background-repeat: no-repeat;*/
+  height: 225px;
+  margin-top: 2.5%;
+  border: 5px solid #fff;
+  position: relative;
+  overflow: hidden;
+  -webkit-box-sizing: border-box;
+/* Safari/Chrome, other WebKit */
+  -moz-box-sizing: border-box;
+/* Firefox, other Gecko */
+  box-sizing: border-box;
+/* Opera/IE 8+ */
+  img {
+    padding-top: 6%;
+    padding-left: 2%;
+    height: 60%;
+    top: 0;
+    position: absolute;
+    transition: all .25s ease-in-out;
+  }
+  img:hover {
+    transform: scale(1.05);
+  }
+}
+
+.grid {
+  background-image: url(../images/grid.png);
+  display: inline-block;
+  opacity: .25;
+  height: 100%;
+  width: 100%;
+}
+
+.slideshow {
+  display: inline-block;
+  height: 100%;
+  width: 300%;
+  background-image: url(../images/top-slider.png);
+  background-size: 100%;
+  background-position-x: 2.5px;
+  background-position-y: -95px;
+  background-repeat: no-repeat;
+  animation-name: slide;
+  animation-duration: 15s;
+  animation-timing-function: ease-in-out;
+  animation-delay: 3s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes slide {
+  0% {
+    transform: translate3d(0,0,0);
+  }
+  33% {
+    transform: translate3d(-629px,0,0);
+  }
+  67% {
+    transform: translate3d(-629px,0,0);
+  }
+  100% {
+    transform: translate3d(-1258px,0,0);
+  }
+}
+
+.circlebar {
+  margin-top: 2%;
+  text-align: center;
+  .circle {
+    width: 10px;
+    height: 10px;
+    margin-right: 1%;
+    background-color: #fff;
+    border: 3px solid #fff;
+    box-sizing: border-box;
+    animation-name: fill;
+    animation-duration: 15s;
+    animation-timing-function: ease-in-out;
+    animation-delay: 3s;
+    animation-iteration-count: infinite;
+  }
+}
+
+#circle1 {
+  animation-name: fill1;
+  background-color: transparent;
+}
+
+#circle2 {
+  animation-name: fill2;
+}
+
+#circle3 {
+  animation-name: fill3;
+}
+
+@keyframes fill1 {
+  0% {
+    background-color: transparent;
+  }
+  33% {
+    background-color: #fff;
+  }
+  100% {
+    background-color: #fff;
+  }
+}
+
+@keyframes fill2 {
+  0% {
+    background-color: #fff;
+  }
+  33% {
+    background-color: transparent;
+  }
+  100% {
+    background-color: #fff;
+  }
+}
+
+@keyframes fill3 {
+  0% {
+    background-color: #fff;
+  }
+  33% {
+    background-color: #fff;
+  }
+  100% {
+    background-color: transparent;
+  }
+}
