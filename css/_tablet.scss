@@ -4,13 +4,9 @@
     width: 65%;
   }
 
-  .slideshow {
-    animation-name: none;
-  }
-
   .articles {
     height: 250px;
-    margin-top: 7.5%;
+    margin-top: 2.5%;
   }
 
   .sk8er-arrow {
@@ -31,6 +27,10 @@
 
   #guerrero {
     background-size: 334%;
+    background-position-x: -391px;
+  }
+  .boards {
+    height: 215px;
   }
 }
 
@@ -65,8 +65,8 @@
     margin-top: 5%;
   }
 
-  .circlebar {
-    display: none;
+  .slideshow {
+    animation-name: none;
   }
 
   .sk8ers {
@@ -92,7 +92,7 @@
   #guerrero {
     background-size: 420%;
     background-position-y: -30px;
-    background-position-x: -340px;
+    background-position-x: -423px;
   }
 
   .boards {

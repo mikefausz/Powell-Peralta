@@ -38,32 +38,38 @@
 
 .slideshow {
   display: inline-block;
-  height: 100%;
-  width: 300%;
+  height: 102%;
+  width: 307%;
   background-image: url(../images/top-slider.png);
   background-size: 100%;
-  background-position-x: 2.5px;
+  background-position-x: -3px;
   background-position-y: -95px;
   background-repeat: no-repeat;
   animation-name: slide;
   animation-duration: 15s;
   animation-timing-function: ease-in-out;
-  animation-delay: 3s;
-  animation-iteration-count: infinite;
+  animation-delay: 2s;
+  // animation-iteration-count: infinite;
 }
 
 @keyframes slide {
   0% {
     transform: translate3d(0,0,0);
   }
-  33% {
-    transform: translate3d(-629px,0,0);
+  20% {
+    transform: translate3d(-33.3333%,0,0);
   }
-  67% {
-    transform: translate3d(-629px,0,0);
+  40% {
+    transform: translate3d(-33.3333%,0,0);
+  }
+  60% {
+    transform: translate3d(-66.6666%,0,0);
+  }
+  80% {
+    transform: translate3d(-66.6666%,0,0);
   }
   100% {
-    transform: translate3d(-1258px,0,0);
+    transform: translate3d(0,0,0);
   }
 }
 
@@ -81,13 +87,16 @@
     animation-duration: 15s;
     animation-timing-function: ease-in-out;
     animation-delay: 3s;
-    animation-iteration-count: infinite;
   }
 }
 
-#circle1 {
-  animation-name: fill1;
+.circlebar .circle:hover {
   background-color: transparent;
+}
+
+#circle1 {  
+  background-color: transparent;
+  animation-name: fill1;
 }
 
 #circle2 {
@@ -102,10 +111,7 @@
   0% {
     background-color: transparent;
   }
-  33% {
-    background-color: #fff;
-  }
-  100% {
+  20% {
     background-color: #fff;
   }
 }
@@ -114,10 +120,10 @@
   0% {
     background-color: #fff;
   }
-  33% {
+  20% {
     background-color: transparent;
   }
-  100% {
+  60% {
     background-color: #fff;
   }
 }
@@ -126,10 +132,10 @@
   0% {
     background-color: #fff;
   }
-  33% {
-    background-color: #fff;
+  60% {
+    background-color: transparent;
   }
   100% {
-    background-color: transparent;
+    background-color: #fff;
   }
 }

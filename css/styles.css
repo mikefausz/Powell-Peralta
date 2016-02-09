@@ -174,28 +174,31 @@ a {
 
 .slideshow {
   display: inline-block;
-  height: 100%;
-  width: 300%;
+  height: 102%;
+  width: 307%;
   background-image: url(../images/top-slider.png);
   background-size: 100%;
-  background-position-x: 2.5px;
+  background-position-x: -3px;
   background-position-y: -95px;
   background-repeat: no-repeat;
   animation-name: slide;
   animation-duration: 15s;
   animation-timing-function: ease-in-out;
-  animation-delay: 3s;
-  animation-iteration-count: infinite; }
+  animation-delay: 2s; }
 
 @keyframes slide {
   0% {
     transform: translate3d(0, 0, 0); }
-  33% {
-    transform: translate3d(-629px, 0, 0); }
-  67% {
-    transform: translate3d(-629px, 0, 0); }
+  20% {
+    transform: translate3d(-33.3333%, 0, 0); }
+  40% {
+    transform: translate3d(-33.3333%, 0, 0); }
+  60% {
+    transform: translate3d(-66.6666%, 0, 0); }
+  80% {
+    transform: translate3d(-66.6666%, 0, 0); }
   100% {
-    transform: translate3d(-1258px, 0, 0); } }
+    transform: translate3d(0, 0, 0); } }
 
 .circlebar {
   margin-top: 2%;
@@ -211,12 +214,14 @@ a {
   animation-name: fill;
   animation-duration: 15s;
   animation-timing-function: ease-in-out;
-  animation-delay: 3s;
-  animation-iteration-count: infinite; }
+  animation-delay: 3s; }
+
+.circlebar .circle:hover {
+  background-color: transparent; }
 
 #circle1 {
-  animation-name: fill1;
-  background-color: transparent; }
+  background-color: transparent;
+  animation-name: fill1; }
 
 #circle2 {
   animation-name: fill2; }
@@ -227,26 +232,24 @@ a {
 @keyframes fill1 {
   0% {
     background-color: transparent; }
-  33% {
-    background-color: #fff; }
-  100% {
+  20% {
     background-color: #fff; } }
 
 @keyframes fill2 {
   0% {
     background-color: #fff; }
-  33% {
+  20% {
     background-color: transparent; }
-  100% {
+  60% {
     background-color: #fff; } }
 
 @keyframes fill3 {
   0% {
     background-color: #fff; }
-  33% {
-    background-color: #fff; }
+  60% {
+    background-color: transparent; }
   100% {
-    background-color: transparent; } }
+    background-color: #fff; } }
 
 .articles {
   margin-top: 2%;
@@ -394,8 +397,8 @@ a {
 
 #guerrero {
   background-image: url(../images/sk8er-2.png);
-  background-size: 290%;
-  background-position-x: -257px;
+  background-size: 295%;
+  background-position-x: -305px;
   background-position-y: -1px;
   height: 305px; }
 
@@ -407,7 +410,7 @@ a {
   display: inline-block;
   margin-top: 2%;
   background-image: url(../images/sk8er-1.png);
-  background-size: 105%;
+  background-size: 110%;
   background-position-x: 0;
   background-position-y: -62px; }
 
@@ -542,11 +545,9 @@ textarea {
   .content {
     margin-top: 2.5%;
     width: 65%; }
-  .slideshow {
-    animation-name: none; }
   .articles {
     height: 250px;
-    margin-top: 7.5%; }
+    margin-top: 2.5%; }
   .sk8er-arrow {
     display: none; }
   #mountain {
@@ -556,7 +557,10 @@ textarea {
   #cab {
     background-size: 121%; }
   #guerrero {
-    background-size: 334%; } }
+    background-size: 334%;
+    background-position-x: -391px; }
+  .boards {
+    height: 215px; } }
 
 @media only screen and (max-width: 1024px) {
   .social {
@@ -578,17 +582,8 @@ textarea {
     box-shadow: 0 0 0 0 rgba(177, 177, 177, 0); }
   .top-photo {
     margin-top: 5%; }
-  /*.top-photo {
-    background-position-x: -75px;
-     background-position-y: -61px;
-     background-size: 156%;
-  }*/
-  /*.top-photo img {
-    padding-top: 8%;
-  padding-left: 4%;
-  }*/
-  .circlebar {
-    display: none; }
+  .slideshow {
+    animation-name: none; }
   .sk8ers {
     margin-top: 7.5%; }
   #mountain {
@@ -604,7 +599,7 @@ textarea {
   #guerrero {
     background-size: 420%;
     background-position-y: -30px;
-    background-position-x: -340px; }
+    background-position-x: -423px; }
   .boards {
     height: 200px;
     margin-top: 7.5%; }
@@ -638,6 +633,8 @@ textarea {
     background-position-y: -97px; }
   .top-photo {
     margin-top: 10%; }
+  .circlebar {
+    display: none; }
   .articles {
     margin-top: 10%;
     height: 315px;
@@ -652,7 +649,7 @@ textarea {
     display: none; }
   .articles .art-text {
     margin: 0;
-    padding: 4%;
+    padding: 5%;
     text-align: center; }
   .col-3 {
     display: block;
@@ -769,53 +766,6 @@ textarea {
     background-position-x: -139px; }
   #guerrero h4 {
     margin-top: 12%; }
-  .boards {
-    height: 350px;
-    margin-top: 20%; }
-  .contact {
-    height: 75px;
-    margin-top: 15%; }
-  .con-text {
-    text-align: center; }
-  .con-text p {
-    display: none; } }
-
-@media only screen and (max-width: 600px) {
-  .content {
-    margin-top: 7.5%;
-    margin-bottom: 10%; }
-  .top-photo {
-    margin-top: 20%; }
-  .top-photo img {
-    padding-top: 14%;
-    padding-left: 12%; }
-  .slideshow {
-    background-position-x: -9.5px;
-    background-position-y: -5px; }
-  .articles {
-    margin-top: 20%; }
-  .col-3 {
-    min-height: 29%;
-    margin-bottom: 4%; }
-  .art-text {
-    padding: 7%; }
-  .art-text h1 {
-    margin: 0; }
-  .sk8ers {
-    margin-top: 20%; }
-  .sk8er-photo h4 {
-    font-size: 34px;
-    line-height: 35px; }
-  #mountain {
-    background-position-y: -13px; }
-  #mullen {
-    background-position-y: -25px; }
-  #cab {
-    background-position-x: -8px;
-    background-position-y: -36px; }
-  #guerrero {
-    background-position-y: -72px;
-    background-position-x: -139px; }
   .boards {
     height: 350px;
     margin-top: 20%; }

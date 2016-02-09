@@ -37,6 +37,10 @@
     margin-top: 10%;
   }
 
+  .circlebar {
+    display: none;
+  }
+
   .articles {
     margin-top: 10%;
     height: 315px;
@@ -55,7 +59,7 @@
 
   .art-text {
     margin: 0;
-    padding: 4%;
+    padding: 5%;
     text-align: center;
   }
 }
@@ -108,13 +112,13 @@
   margin-left: 0;
   background-size: 108%;
   background-position-x: -6px;
-    background-position-y: -59px;
+  background-position-y: -59px;
 }
 #cab {
   background-position-x: -21px;
-    background-position-y: -96px;
-background-size: 113%;
-margin-top: 2.5%;
+  background-position-y: -96px;
+  background-size: 113%;
+  margin-top: 2.5%;
   h4 {
     margin-top: 10%;
   }
@@ -122,8 +126,8 @@ margin-top: 2.5%;
 #guerrero {
   height: 100%;
   background-size: 167%;
-background-position-y: -168px;
-background-position-x: -255px;
+  background-position-y: -168px;
+  background-position-x: -255px;
   h4 {
     margin-top: 8%;
   }
