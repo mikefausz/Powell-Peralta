@@ -98,7 +98,7 @@ a {
   margin-right: auto;
   text-align: center;
   vertical-align: middle;
-  background-color: #b4292e;
+  background-color: #B4292E;
   box-shadow: 0 4px 0 0 rgba(177, 177, 177, 0.5);
   -webkit-box-sizing: border-box;
   /* Safari/Chrome, other WebKit */
@@ -137,11 +137,6 @@ a {
   background-color: #fff;
 }*/
 .top-photo {
-  /*background-image: url(./images/top-slide.png),url();
-  background-size: 300%;
-  background-position-x: 0px;
-  background-position-y: -18px;
-  background-repeat: no-repeat;*/
   height: 225px;
   margin-top: 2.5%;
   border: 5px solid #fff;
@@ -273,10 +268,7 @@ a {
   text-align: center;
   font-size: 10px;
   text-transform: uppercase;
-  color: #b4292e; }
-
-.articles h3:hover {
-  color: grey; }
+  color: #B4292E; }
 
 .articles .art-text {
   color: #000;
@@ -284,6 +276,9 @@ a {
   margin: 10%;
   margin-bottom: 7%;
   transition: all .2s ease-in-out; }
+
+.articles h3:hover {
+  color: grey; }
 
 .art-text:hover {
   transform: scale(1.025); }
@@ -533,7 +528,7 @@ textarea {
   padding-top: 3%;
   margin-top: 5%;
   width: 55%;
-  background-color: #b4292e;
+  background-color: #B4292E;
   height: 13%;
   font-size: 13px;
   text-transform: uppercase; }
@@ -647,7 +642,7 @@ textarea {
     margin-bottom: 8px; }
   .articles p, .articles h3 {
     display: none; }
-  .articles .art-text {
+  .art-text {
     margin: 0;
     padding: 5%;
     text-align: center; }

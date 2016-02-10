@@ -19,20 +19,19 @@
     text-align: center;
     font-size: 10px;
     text-transform: uppercase;
-    color: rgba(180,41,46,1);
+    color: $red;
+  }
+  .art-text {
+    color: #000;
+    line-height: 16px;
+    margin: 10%;
+    margin-bottom: 7%;
+    transition: all .2s ease-in-out;
   }
 }
 
 .articles h3:hover {
   color: grey;
-}
-
-.articles .art-text {
-  color: #000;
-  line-height: 16px;
-  margin: 10%;
-  margin-bottom: 7%;
-  transition: all .2s ease-in-out;
 }
 
 .art-text:hover {
@@ -46,8 +45,7 @@
   background-color: #fff;
   width: 32.5%;
   min-height: 100%;
-}
-
-.col-3:last-of-type {
-  float: right;
+  &:last-of-type {
+    float: right;
+  }
 }

@@ -1,9 +1,4 @@
 .top-photo {
-/*background-image: url(./images/top-slide.png),url();
-  background-size: 300%;
-  background-position-x: 0px;
-  background-position-y: -18px;
-  background-repeat: no-repeat;*/
   height: 225px;
   margin-top: 2.5%;
   border: 5px solid #fff;
@@ -49,7 +44,6 @@
   animation-duration: 15s;
   animation-timing-function: ease-in-out;
   animation-delay: 2s;
-  // animation-iteration-count: infinite;
 }
 
 @keyframes slide {
@@ -94,7 +88,7 @@
   background-color: transparent;
 }
 
-#circle1 {  
+#circle1 {
   background-color: transparent;
   animation-name: fill1;
 }

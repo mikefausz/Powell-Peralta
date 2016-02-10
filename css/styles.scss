@@ -1,3 +1,7 @@
+// VARIABLE
+$red: #B4292E;
+
+// GLOBAL STYLES
 body {
   background-image: url(../images/bg.jpg);
   background-repeat: no-repeat;
@@ -34,6 +38,7 @@ a {
   color: #fff;
 }
 
+// IMPORTS
 @import "header";
 @import "top-photo";
 @import "articles";

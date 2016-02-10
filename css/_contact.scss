@@ -66,12 +66,11 @@ textarea {
   padding-top: 3%;
   margin-top: 5%;
   width: 55%;
-  background-color: rgba(180,41,46,1);
+  background-color: $red;
   height: 13%;
   font-size: 13px;
   text-transform: uppercase;
-}
-
-#submit:hover {
-  background-color: grey;
+  &:hover {
+    background-color: grey;
+  }
 }
