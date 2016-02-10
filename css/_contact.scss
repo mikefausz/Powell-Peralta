@@ -48,14 +48,14 @@ textarea {
   width: 91%;
   font-family: 'Open-sans',sans-serif;
   text-transform: uppercase;
-  color: grey;
+  color: $lt-grey;
   margin-bottom: 2%;
   font-size: 12px;
   padding: 11px;
   border-top: 2px;
   border-left: 2px;
   border-style: solid;
-  border-color: darkgrey;
+  border-color: $grey;
   line-height: 100%;
 }
 
@@ -71,6 +71,6 @@ textarea {
   font-size: 13px;
   text-transform: uppercase;
   &:hover {
-    background-color: grey;
+    background-color: $grey;
   }
 }

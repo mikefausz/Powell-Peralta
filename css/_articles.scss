@@ -8,7 +8,7 @@
     font-weight: 400;
   }
   h2 {
-    color: grey;
+    color: $lt-grey;
     font-size: 10px;
     font-weight: 400;
   }
@@ -20,22 +20,20 @@
     font-size: 10px;
     text-transform: uppercase;
     color: $red;
+    &:hover {
+      color: $grey;
+    }
   }
   .art-text {
     color: #000;
     line-height: 16px;
     margin: 10%;
     margin-bottom: 7%;
-    transition: all .2s ease-in-out;
+    @include ease(.2s);
+    &:hover {
+      transform: scale(1.025);
+    }
   }
-}
-
-.articles h3:hover {
-  color: grey;
-}
-
-.art-text:hover {
-  transform: scale(1.025);
 }
 
 .col-3 {
@@ -45,7 +43,4 @@
   background-color: #fff;
   width: 32.5%;
   min-height: 100%;
-  &:last-of-type {
-    float: right;
-  }
 }

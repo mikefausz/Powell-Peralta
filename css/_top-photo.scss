@@ -4,19 +4,14 @@
   border: 5px solid #fff;
   position: relative;
   overflow: hidden;
-  -webkit-box-sizing: border-box;
-/* Safari/Chrome, other WebKit */
-  -moz-box-sizing: border-box;
-/* Firefox, other Gecko */
-  box-sizing: border-box;
-/* Opera/IE 8+ */
+  @include border-box;
   img {
     padding-top: 6%;
     padding-left: 2%;
     height: 60%;
     top: 0;
     position: absolute;
-    transition: all .25s ease-in-out;
+    @include ease(.25s);
   }
   img:hover {
     transform: scale(1.05);
@@ -70,35 +65,32 @@
 .circlebar {
   margin-top: 2%;
   text-align: center;
-  .circle {
-    width: 10px;
-    height: 10px;
+  .radio-circle {
+    @include white-circle(10px);
+    @include border-box;
     margin-right: 1%;
-    background-color: #fff;
     border: 3px solid #fff;
-    box-sizing: border-box;
     animation-name: fill;
     animation-duration: 15s;
     animation-timing-function: ease-in-out;
     animation-delay: 3s;
+    &:hover {
+      background-color: transparent;
+    }
   }
-}
-
-.circlebar .circle:hover {
-  background-color: transparent;
-}
-
-#circle1 {
-  background-color: transparent;
-  animation-name: fill1;
-}
-
-#circle2 {
-  animation-name: fill2;
-}
-
-#circle3 {
-  animation-name: fill3;
+  .rad-circle1 {
+    @extend .radio-circle;
+    background-color: transparent;
+    animation-name: fill1;
+  }
+  .rad-circle2 {
+    @extend .radio-circle;
+    animation-name: fill2;
+  }
+  .rad-circle3 {
+    @extend .radio-circle;
+    animation-name: fill3;
+  }
 }
 
 @keyframes fill1 {
