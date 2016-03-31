@@ -15,7 +15,10 @@ Let's create a commercial web page from scratch using a mockup image as a guide.
 * Responsive Web Design
 
 ###Your Mission
-Without fail, a front-end developer will need to convert a wireframe into a fully functioning website. For this assignment, you'll be using the below (filepath) mockup image and turning it into an active web page.
+Without fail, a front-end developer will need to convert a wireframe into a fully functioning website. For this assignment, you'll be using the below mockup image and turning it into an active web page:
+
+![alt text](https://raw.githubusercontent.com/mikefausz/powell-peralta/master/images/powell_peralta.jpg "Powell Peralta Wireframe")
+
 
 ###Explore Mode
 **Challenge #1.1:** Let's work on your layout skills! Recreate the web page from the mockup above. Place your HTML in a file called index.html, and your CSS in a file called styles.css. Any images you use should be placed in a images directory. You can choose your own images or crop them from the mockup in an image editor of your choice. 
