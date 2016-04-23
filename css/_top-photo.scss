@@ -1,0 +1,127 @@
+.top-photo {
+  height: 225px;
+  margin-top: 2.5%;
+  border: 5px solid #fff;
+  position: relative;
+  overflow: hidden;
+  @include border-box;
+  img {
+    padding-top: 6%;
+    padding-left: 2%;
+    height: 60%;
+    top: 0;
+    position: absolute;
+    @include ease(.25s);
+  }
+  img:hover {
+    transform: scale(1.05);
+  }
+}
+
+.grid {
+  background-image: url(../images/grid.png);
+  display: inline-block;
+  opacity: .25;
+  height: 100%;
+  width: 100%;
+}
+
+.slideshow {
+  display: inline-block;
+  height: 102%;
+  width: 307%;
+  background-image: url(../images/top-slider.png);
+  background-size: 100%;
+  background-position-x: -3px;
+  background-position-y: -95px;
+  background-repeat: no-repeat;
+  animation-name: slide;
+  animation-duration: 15s;
+  animation-timing-function: ease-in-out;
+  animation-delay: 2s;
+}
+
+@keyframes slide {
+  0% {
+    transform: translate3d(0,0,0);
+  }
+  20% {
+    transform: translate3d(-33.3333%,0,0);
+  }
+  40% {
+    transform: translate3d(-33.3333%,0,0);
+  }
+  60% {
+    transform: translate3d(-66.6666%,0,0);
+  }
+  80% {
+    transform: translate3d(-66.6666%,0,0);
+  }
+  100% {
+    transform: translate3d(0,0,0);
+  }
+}
+
+.circlebar {
+  margin-top: 2%;
+  text-align: center;
+  .radio-circle {
+    @include white-circle(10px);
+    @include border-box;
+    margin-right: 1%;
+    border: 3px solid #fff;
+    animation-name: fill;
+    animation-duration: 15s;
+    animation-timing-function: ease-in-out;
+    animation-delay: 3s;
+    &:hover {
+      background-color: transparent;
+    }
+  }
+  .rad-circle1 {
+    @extend .radio-circle;
+    background-color: transparent;
+    animation-name: fill1;
+  }
+  .rad-circle2 {
+    @extend .radio-circle;
+    animation-name: fill2;
+  }
+  .rad-circle3 {
+    @extend .radio-circle;
+    animation-name: fill3;
+  }
+}
+
+@keyframes fill1 {
+  0% {
+    background-color: transparent;
+  }
+  20% {
+    background-color: #fff;
+  }
+}
+
+@keyframes fill2 {
+  0% {
+    background-color: #fff;
+  }
+  20% {
+    background-color: transparent;
+  }
+  60% {
+    background-color: #fff;
+  }
+}
+
+@keyframes fill3 {
+  0% {
+    background-color: #fff;
+  }
+  60% {
+    background-color: transparent;
+  }
+  100% {
+    background-color: #fff;
+  }
+}

@@ -1,0 +1,269 @@
+@media only screen and (max-width: 900px) {
+  .content {
+    width: 80%;
+    margin-top: 2.5%;
+  }
+
+  nav {
+    display: none;
+  }
+
+  .buttonbar {
+    height: 180px;
+    a {
+      width: 100%;
+      height: 24%;
+      display: block;
+      margin-bottom: 2%;
+    }
+  }
+
+  .button {
+    width: 100%;
+    height: 100%;
+    p {
+      margin-top: 1.5%;
+      font-size: 18px;
+    }
+  }
+
+  .slideshow {
+    background-size: 110%;
+    background-position-x: -35.5px;
+    background-position-y: -97px;
+  }
+
+  .top-photo {
+    margin-top: 10%;
+  }
+
+  .circlebar {
+    display: none;
+  }
+
+  .articles {
+    margin-top: 10%;
+    height: 315px;
+    flex-direction: column;
+    h1, h2 {
+      display: inline-block;
+      margin: 0;
+    }
+    h1 {
+      font-size: 16px;
+      margin-bottom: 8px;
+    }
+    p, h3 {
+      display: none;
+    }
+    .art-text {
+      margin: 0;
+      padding: 5%;
+      text-align: center;
+    }
+  }
+
+  .col-3 {
+    display: block;
+    width: 100%;
+    min-height: 28%;
+  }
+
+  .sk8ers {
+    margin-top: 8%;
+    height: 600px;
+    h4 {
+      margin-top: 9%;
+      font-size: 40px;
+    }
+  }
+
+  .col-1 {
+    width: 100%;
+    height: 74%;
+    display: block;
+    .row-1 {
+      width: 100%;
+      height: 66.6666%;
+      .inner-col {
+        width: 100%;
+        height: 48%;
+        margin-bottom: 2.5%;
+      }
+    }
+    .row-2 {
+        width: 100%;
+        height: 33.3333%;
+    }
+  }
+
+  .col-2 {
+    height: 24%;
+    width: 100%;
+    margin-top: 5%;
+  }
+
+  .sk8er-arrow {
+    display: none;
+  }
+
+  #mountain {
+    background-size: 110%;
+    background-position-x: -16px;
+    background-position-y: -73px;
+  }
+
+  #mullen {
+    margin-left: 0;
+    background-size: 108%;
+    background-position-x: -6px;
+    background-position-y: -59px;
+  }
+
+  #cab {
+    background-position-x: -21px;
+    background-position-y: -96px;
+    background-size: 113%;
+    margin-top: 2.5%;
+    h4 {
+      margin-top: 10%;
+    }
+  }
+
+  #guerrero {
+    height: 100%;
+    background-size: 167%;
+    background-position-y: -168px;
+    background-position-x: -255px;
+    h4 {
+      margin-top: 8%;
+    }
+  }
+
+  .boards {
+    height: 560px;
+    margin-top: 10%;
+  }
+
+  .board-grid {
+    flex-direction: column;
+    .board-row {
+      width: 100%;
+      .board-box {
+        width: 7.5%;
+      }
+    }
+  }
+
+  .contact {
+    height: 120px;
+    padding: 7.5%;
+  }
+
+  .con-text {
+    width: 100%;
+    height: 150px;
+  }
+
+  #con-social {
+    text-align: center;
+    margin-top: 6%;
+  }
+
+  .con-form {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .content {
+    margin-top: 7.5%;
+    margin-bottom: 10%;
+  }
+
+  .button p {
+    margin-top: 2.5%;
+  }
+  
+  .top-photo {
+    margin-top: 20%;
+    img {
+      padding-top: 14%;
+      padding-left: 12%;
+    }
+  }
+
+  .slideshow {
+    background-position-x: -9.5px;
+    background-position-y: -5px;
+  }
+
+  .articles {
+    margin-top: 20%;
+  }
+
+  .col-3 {
+    min-height: 29%;
+    margin-bottom: 4%;
+  }
+
+  .art-text {
+    padding: 5.5%;
+    h1 {
+      margin: 0;
+    }
+  }
+
+  .sk8ers {
+    margin-top: 20%;
+  }
+
+  .sk8er-photo {
+    h4 {
+      font-size: 34px;
+      line-height: 35px;
+      margin-top: 13%;
+    }
+  }
+
+  #mountain {
+    background-position-y: -13px;
+  }
+
+  #mullen {
+    background-position-y: -25px;
+  }
+
+  #cab {
+    background-position-x: -8px;
+    background-position-y: -36px;
+    h4 {
+      margin-top: 12%;
+    }
+  }
+
+  #guerrero {
+    background-position-y: -72px;
+    background-position-x: -139px;
+    h4 {
+      margin-top: 12%;
+    }
+  }
+
+  .boards {
+    height: 350px;
+    margin-top: 20%;
+  }
+
+  .contact {
+    height: 75px;
+    margin-top: 15%;
+  }
+
+  .con-text {
+    text-align: center;
+    p {
+    display: none;
+    }
+  }
+}

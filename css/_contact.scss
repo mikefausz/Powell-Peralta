@@ -1,0 +1,76 @@
+.contact {
+  background-color: #fff;
+  height: 233px;
+  margin-top: 3%;
+  padding: 3.5%;
+  img {
+    box-shadow: 0 0 0 0 transparent;
+  }
+}
+
+.con-text {
+  display: inline-block;
+  height: 233px;
+  width: 48%;
+  h1 {
+    display: inline-block;
+    margin: 0;
+    font-size: 16px;
+    font-weight: 400;
+    color: #000;
+    line-height: 16px;
+    vertical-align: top;
+  }
+  p {
+    font-size: 8px;
+    font-weight: 400;
+    color: #000;
+    line-height: 16px;
+  }
+}
+
+.con-form {
+  display: inline-block;
+  float: right;
+  height: 233px;
+  width: 48%;
+  text-align: right;
+}
+
+#con-social {
+  text-align: left;
+  padding: 0;
+  margin-top: 10%;
+  -webkit-filter: grayscale(100%);
+}
+
+textarea {
+  width: 91%;
+  font-family: 'Open-sans',sans-serif;
+  text-transform: uppercase;
+  color: $lt-grey;
+  margin-bottom: 2%;
+  font-size: 12px;
+  padding: 11px;
+  border-top: 2px;
+  border-left: 2px;
+  border-style: solid;
+  border-color: $grey;
+  line-height: 100%;
+}
+
+#submit {
+  display: inline-block;
+  width: 55%;
+  text-align: center;
+  padding-top: 3%;
+  margin-top: 5%;
+  width: 55%;
+  background-color: $red;
+  height: 13%;
+  font-size: 13px;
+  text-transform: uppercase;
+  &:hover {
+    background-color: $grey;
+  }
+}

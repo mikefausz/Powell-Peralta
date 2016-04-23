@@ -1,0 +1,109 @@
+@media only screen and (max-width: 1160px) {
+  .content {
+    margin-top: 2.5%;
+    width: 65%;
+  }
+
+  .articles {
+    height: 250px;
+    margin-top: 2.5%;
+  }
+
+  .sk8er-arrow {
+    display: none;
+  }
+
+  #mountain {
+    background-size: 168%;
+  }
+
+  #mullen {
+    background-size: 163%;
+  }
+
+  #cab {
+    background-size: 121%;
+  }
+
+  #guerrero {
+    background-size: 334%;
+    background-position-x: -391px;
+  }
+
+  .boards {
+    height: 215px;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .social {
+    text-align: center;
+  }
+
+  .buttonbar {
+    margin-top: 5%;
+    height: 150px;
+    display: inline-block;
+  }
+
+  .button {
+    width: 49%;
+    margin-bottom: 2%;
+    margin-right: .5%;
+    height: 45%;
+    box-shadow: 0 0 0 0 rgba(177,177,177,.5);
+    p {
+      margin-top: 7.5%;
+      font-size: 16px;
+    }
+    &:hover {
+      box-shadow: 0 0 0 0 rgba(177,177,177,0);
+    }
+  }
+
+  .top-photo {
+    margin-top: 5%;
+  }
+
+  .slideshow {
+    animation-name: none;
+  }
+
+  .sk8ers {
+    margin-top: 7.5%;
+  }
+
+  #mountain {
+    background-size: 190%;
+    background-position-x: -96px;
+    background-position-y: -7px;
+  }
+
+  #mullen {
+    background-size: 190%;
+    background-position-x: -29px;
+    background-position-y: -5px;
+  }
+
+  #cab {
+    background-size: 137%;
+  }
+
+  #guerrero {
+    background-size: 420%;
+    background-position-y: -30px;
+    background-position-x: -423px;
+  }
+
+  .boards {
+    height: 200px;
+    margin-top: 7.5%;
+    img {
+      padding-right: 3%;
+    }
+  }
+
+  .contact {
+    margin-top: 7.5%;
+  }
+}
